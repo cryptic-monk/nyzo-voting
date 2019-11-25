@@ -4,7 +4,7 @@ A Python script to facilitate voting on Nyzo NCFPs (Community Fund Proposals).
 ## How To
 Install the script with:  
 
-`wget ...`
+`wget https://raw.githubusercontent.com/cryptic-monk/nyzo-voting/master/vote.py`
 
 The script has no dependencies apart from the Python Standard Libraries and python3 
 should come preinstalled on most Unix systems. 
