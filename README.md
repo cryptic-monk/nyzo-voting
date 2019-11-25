@@ -22,7 +22,8 @@ Vote as follows:
 
 - Instead of wgetting the script, you can of course also copy-paste it (and please do read it before using it).
 - The script pulls the voting signatures from this public repository: ``https://``. If you don't
-trust this process, you can create a file called vote.sig containing the signatures you want to vote on and vote as follows: 
+trust this process, you can create a file called vote.sig in the same directory that contains the vote script
+with the signatures you want to vote on and vote as follows: 
 
 `sudo python3 vote.py yes vote.sig`  
 `sudo python3 vote.py no vote.sig`  
@@ -36,7 +37,7 @@ trust this process, you can create a file called vote.sig containing the signatu
 
 ## Voting Lifehacks
 
-Especially voting `yes` can take a looong time, due to how Nyzo cycle transactions work.
+Voting can take a significant amount of time, due to how Nyzo cycle transactions work.
 If you don't want to keep the terminal connection to your sentinel open all the time (or simply
 don't trust your internet connection), you can use tmux to run your voting session in the background.
 It should come pre-installed on your box, but if not, you can easily install it. Then, type
@@ -48,7 +49,7 @@ session, reestablish the terminal connection to your sentinel and type `tmux att
 ## How It Works
 
 - Voting `yes` does the obvious: it signs the corresponding cycle transaction(s) with the private keys from your in-cycle verifiers.
-- Voting `no` and `abstention` sends one micronyzo (a negligible amount of money) to the cycle fund, with your vote in the transaction data. 
+- Voting `no` and `abstention` sends one micronyzo (a negligible amount of money) to the cycle fund, with your vote's fingerprint in the transaction data. 
 - The next task will then be to pull the voting data from the chain, sanitize it and display it appropriately.
 
 ## Why Voting "No" or "Abstention" Makes Sense
