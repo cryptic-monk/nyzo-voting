@@ -18,6 +18,12 @@ Vote as follows:
 `sudo python3 vote.py no NCFP3`  
 `sudo python3 vote.py abstention NCFP3`
 
+## Possible Issues and Fixes
+
+- The script assumes that you installed Nyzo under `/home/ubuntu/nyzoVerifier`, respectively that your main Nyzo jar lies in
+`/home/ubuntu/nyzoVerifier/build/libs/nyzoVerifier-1.0.jar`. If that is not the case, please adapt the jar path near the top of the
+script accordingly.
+
 ## How To (For the Paranoid)
 
 - Instead of wgetting the script, you can of course also copy-paste it (and please do read it before using it).
